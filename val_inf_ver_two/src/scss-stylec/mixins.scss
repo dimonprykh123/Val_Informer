@@ -1,0 +1,18 @@
+@import "variables";
+@mixin center_pos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin btn ($color,$wid,$hei) {
+  border-style:none;
+  //border-color: darkgrey;
+  background-color: $color;
+  width: $wid;
+  height: $hei;
+  color: white;
+  &:hover{
+    border-style: solid;
+    //background-color:lighten($color,30%);
+    }
+}
